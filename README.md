@@ -27,7 +27,7 @@ The steps involved in creating the website.
 
 + Password hashing has been implemented using [Werkzeug](http://werkzeug.pocoo.org/) a flask extension that implements password hashing . Password hashing is a complicated topic that should be left to security experts, but there are extensions like werkzeug that implement all that logic in a way that is simple to be invoked from an application.
 
-+ Login and Registration and other authentication related parts are handled using [Flask_Login](https://flask-login.readthedocs.io/). This extension manages the user logged-in state, so that for example users can log in to the application and then navigate to different pages while the application "remembers" that the user is logged in. It also provides the "remember me" functionality that allows users to remain logged in even after closing the browser window. 
++ Login and Registration and other authentication related parts are handled using [Flask_Login](https://flask-login.readthedocs.io/). This extension manages the user logged-in state, so that for example users can log in to the application and then navigate to different pages while the application "remembers" that the user is logged in.
 
 + Sqlite database is being used to store the mappings of the Questions to the asker , anwered by expert and its answer. [Flask_SQLAlchemy](http://packages.python.org/Flask-SQLAlchemy) an ORM tool that provides methods to perform CRUD operations without having to write raw SQL statements is used to write and read the data from the sqlite database.
 
